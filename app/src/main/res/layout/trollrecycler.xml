@@ -104,50 +104,65 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
+            android:scaleType="fitCenter"
             app:srcCompat="@drawable/husdes" />
-        <ImageView
-            android:id="@+id/imageView01"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginLeft="150dp"
-            app:srcCompat="@drawable/likeactive" />
-        <ImageView
-            android:id="@+id/imageView02"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginLeft="150dp"
-            app:srcCompat="@drawable/likenonactive" />
+
+        <com.brouding.doubletaplikeview.DoubleTapLikeView
+            android:id="@+id/layout_double_tap_like"
+            android:layout_width="143dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="160dp"
+            app:adjustViewBounds="true"
+            app:disableAnimation="false"
+            app:doubleTapIn="200"
+            app:icon="@drawable/ic_heart"
+            app:scaleType="fitCenter" />
 
         <ImageButton
             android:id="@+id/comment"
-            android:layout_width="80dp"
-            android:layout_height="72dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="350dp"
             android:backgroundTint="#FCFDFD"
             android:src="@drawable/message" />
 
         <ImageButton
-            android:id="@+id/share"
-            android:layout_width="80dp"
-            android:layout_height="72dp"
-            android:layout_marginLeft="270dp"
+            android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="145dp"
             android:layout_marginTop="350dp"
             android:backgroundTint="#FFFFFF"
-            android:src="@drawable/cloudcomputing" />
+            android:src="@drawable/downloade" />
 
         <ImageButton
-            android:id="@+id/star_button"
-            android:layout_width="80dp"
-            android:layout_height="72dp"
-            android:layout_marginLeft="150dp"
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
             android:layout_marginTop="350dp"
             android:backgroundTint="#FFFFFF"
-            android:src="@drawable/shareo" />
+            android:src="@drawable/sharea" />
+
+        <ImageButton
+            android:id="@+id/bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="345dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/bookmarked" />
+
+        <TextView
+            android:id="@+id/yu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginRight="10dp"
+            android:text="1 Likes" />
 
 
     </androidx.cardview.widget.CardView>
